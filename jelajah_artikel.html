@@ -1,0 +1,233 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajah Artikel</title>
+    <link rel="shortcut icon" type="x-icon" href="Images/Vector.png">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jelajah_artikel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <nav data-aos="fade-down" data-aos-duration="2000" >
+            <div class="logo">
+                <a href="home.html">
+                    <img src="Images/LogoGizi.png" alt="LOGO" data-aos="fade-right" data-aos-duration="2000"  data-aos-delay="1500">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="home.html">Beranda</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">☇ Manfaat Pangan </a>
+                    <div class="dropdown-content">
+                        <a href="manfaat_pangan_sayur.html
+                            ">Manfaat Sayur</a>
+                        <a href="manfaat_daging.html">Manfaat Daging</a>
+                        <a href="manfaat_buah.html">Manfaat Buah</a>
+                        <a href="manfaat_pangan_lainnya.html">Manfaat Lainnya</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">☇ Panduan Sehat </a>
+                    <div class="dropdown-content">
+                        <a href="panduan_gizi.html">Panduan Gizi</a>
+                        <a href="jelajah_resep_makanan.html">Resep Sehat</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="tentang_kami.html">Tentang Kami</a>
+                </li>
+                <button class="btn1">JurnalKids</button>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+    <div class="judul">
+        <h1><b>Jelajahi Berbagai Artikel <br> Menarik untuk Menambah Wawasan</b></h1>
+    </div>
+
+    <div class="search-container">
+        <input type="text" placeholder="Cari Artikel...">
+        <button type="submit"><i class="fa fa-search"><img src="Images/search.png" alt=""></i></button>
+    </div>
+
+    <script>
+        // Fungsi pencarian
+        function cariArtikel() {
+            // Ambil nilai input dari pengguna
+            var input = document.getElementById('searchInput').value.toUpperCase();
+    
+            // Ambil elemen yang akan dicari
+            var artikel = document.getElementsByClassName('artikel');
+    
+            // Loop melalui setiap elemen artikel
+            for (var i = 0; i < artikel.length; i++) {
+                var judul = artikel[i].getElementsByTagName('h1')[0];
+                var isi = artikel[i].getElementsByTagName('p')[0];
+                
+                // Periksa apakah judul atau isi artikel mengandung kata kunci pencarian
+                if (judul.innerText.toUpperCase().indexOf(input) > -1 || isi.innerText.toUpperCase().indexOf(input) > -1) {
+                    artikel[i].style.display = 'artikel';
+                } else {
+                    artikel[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+    
+
+
+    <div>
+        <header>
+            <div class="container">
+                <img src="Images/anak.png" alt="Portofolio Image">
+                <div class="header-content">
+                    <h3>Tips & Trik</h3>
+                    <h1>Tips menyiapkan Makanan Sehat serta Menarik untuk Anak </h1>
+                    <p>Masalah kesehatan tubuh memang tidak bisa dipandang sebelah mata. Kita harus makan makanan yang kaya akan gizi tinggi serta serat yang tinggi.</p>
+                    <a href="#" class="explore-button">Baca Selengkapnya ➔</a>
+                </div>
+            </div>
+        </header>
+    </div>
+    
+
+
+    <div>
+        <section class="artikel">
+            
+            <div class="artikel-row">
+                <div class="artikel-column">
+                    <div class="artikel-item">
+                        <img src="Images/articel1.png" alt="">
+                        <h5>Tips & Trik</h5>
+                        <h3>Panduan Praktis untuk Makan Sehat Setiap Hari</h3>
+                        <p>Masalah kesehatan tubuh memang tidak bisa dipandang sebelah mata. Kita harus makan bross...</p>
+                        <a href="articel.html" class="read-more">Baca Selengkapnya ➔</a>
+                    </div>
+                </div>
+                <div class="artikel-column">
+                    <div class="artikel-item">
+                        <img src="Images/Rectangle.png" alt="">
+                        <h5>Mitos & Fakta</h5>
+                        <h3>16 Mitos dan Fakta Soal Nutrisi Anak yang perlu diketahui</h3>
+                        <p>Yuk, cari tahu yang mana mitos dan fakta soal nutrisi bagi Si Kecil menurut penjelasan dari dokter anak...</p>
+                        <a href="#" class="read-more">Baca Selengkapnya ➔</a>
+                    </div>
+                </div>
+                <div class="artikel-column">
+                    <div class="artikel-item">
+                        <img src="Images/buahbuahan.png" alt="">
+                        <h5>Rekomendasi</h5>
+                        <h3>5 Makanan Sehat untuk Meningkatkan Daya Tahan Tubuh</h3>
+                        <p>Masalah kesehatan tubuh memang tidak bisa dipandang sebelah mata. Kita harus makan makanan sehat ...</p>
+                        <a href="#" class="read-more">Baca Selengkapnya ➔</a>
+                    </div>
+                </div>
+                <div class="artikel-column">
+                    <div class="artikel-item">
+                        <img src="Images/buahbuahan.png" alt="">
+                        <h5>Rekomendasi</h5>
+                        <h3>5 Makanan Sehat untuk Meningkatkan Daya Tahan Tubuh</h3>
+                        <p>Masalah kesehatan tubuh memang tidak bisa dipandang sebelah mata. Kita harus makan makanan sehat ...</p>
+                        <a href="#" class="read-more">Baca Selengkapnya ➔</a>
+                    </div>
+                </div>
+                <div class="artikel-column">
+                    <div class="artikel-item">
+                        <img src="Images/buahbuahan.png" alt="">
+                        <h5>Rekomendasi</h5>
+                        <h3>5 Makanan Sehat untuk Meningkatkan Daya Tahan Tubuh</h3>
+                        <p>Masalah kesehatan tubuh memang tidak bisa dipandang sebelah mata. Kita harus makan makanan sehat ...</p>
+                        <a href="#" class="read-more">Baca Selengkapnya ➔</a>
+                    </div>
+                </div>
+                <div class="artikel-column">
+                    <div class="artikel-item">
+                        <img src="Images/buahbuahan.png" alt="">
+                        <h5>Rekomendasi</h5>
+                        <h3>5 Makanan Sehat untuk Meningkatkan Daya Tahan Tubuh</h3>
+                        <p>Masalah kesehatan tubuh memang tidak bisa dipandang sebelah mata. Kita harus makan makanan sehat ...</p>
+                        <a href="#" class="read-more">Baca Selengkapnya ➔</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    
+
+
+
+
+
+
+
+    
+    <div>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-color"><img src="Images/LogoGizi.png" alt=""></h3>
+                    <p>Selamat Datang di <b class="footer-color">NutriKids</b>, Platform yang berkomitmen untuk menyediakan informasi gizi yang akurat dan bermanfaat kepada para orangtua yang peduli akan kesehatan anak-anak mereka. </p>
+                    <div class="medsos">
+                        <a href="https://www.instagram.com"><img src="Images/instagram.png" alt=""></a>
+                        <a href="https://www.linkedin.com"><img src="Images/linkedin-in.png" alt=""></a>
+                        <a href="https://www.facebook.com"><img src="Images/facebook-f.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-color">Bantuan</h3>
+                    <ul class="Bantuan">
+                        <li>FAQs</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy </li>
+                    </ul>
+                </div>
+
+
+
+                
+                <div class="footer-column">
+                    <h3 class="footer-color">Kontak</h3>
+                    <ul>
+
+                        <div class="contact">
+                            <li> <img src="Images/Frame.png" alt=""></li>
+                            <div>
+                                <li class="putih">Telepon :</li>
+                            <li class="hijau">+628123456789</li>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <li> <img src="Images/sms.png" alt=""></li>
+                            <div>
+                                <li class="putih">Email:</li>
+                            <li class="hijau">food@sunshine.id</li>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <li> <img src="Images/maps.png" alt=""></li>
+                            <div>
+                                <li class="putih">Alamat:</li>
+                            <li class="hijau">Jalan jalan No. 99 Airlangga Gubeng, Surabaya,
+                                Jawa Timur, 11234</li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <p class="copy">&copy; 2024, BrandName All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
