@@ -1,0 +1,321 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding:10px;
+  background-color: #ffffff; /* Tambahkan latar belakang jika diinginkan */
+  z-index: 1000; /* Atur z-index agar navigasi tampil di atas konten lain */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.logo img {
+  width: 150px; /* Atur lebar gambar logo sesuai kebutuhan */
+  height: auto; /* Biarkan tinggi gambar mengikuti proporsi aslinya */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 50px;
+  position: relative;
+  /* Untuk posisi relatif agar dropdown muncul di posisi relatif dari item menu utama */
+}
+
+
+.nav-links li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #3e8e41;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 5px;
+  display: block;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  /* Menambahkan transisi jika diinginkan */
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  padding: 15px;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.016);
+  z-index: 1;
+  opacity: 0;
+  /* Atur opacity ke 0 agar awalnya tersembunyi */
+  transition: opacity 0.9s ease;
+  /* Tambahkan efek transisi */
+}
+
+/* Tampilkan dropdown ketika item menu utama di-hover */
+.nav-links li:hover .dropdown-content {
+  display: block;
+  opacity: 2;
+  /* Atur opacity ke 1 ketika dropdown ditampilkan */
+}
+
+.panduan_gizi {
+  text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+  padding: 10px 30px; /* Ruang dalam di dalam tautan */
+  background-color: #0f9b37; /* Warna latar belakang tautan */
+  color: #fff; /* Warna teks */
+  border-radius: 50px; /* Membuat sudut tautan sedikit melengkung */
+}
+
+.panduan_gizi:hover {
+  background-color: #1db265; /* Warna latar belakang saat tautan dihover */
+}
+
+/* General button styling */
+.btn1 {
+  display: inline-block;
+  padding: 5px ;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #14B85E;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.btn1:hover {
+  background-color: #2a7c33;
+  transform: translateY(-2px);
+}
+
+/* Active effect */
+.btn1:active {
+  background-color: #d3fdd8;
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus effect */
+.btn1:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(194, 243, 195, 0.5);
+}
+
+
+
+
+
+
+/*bagian article pada isi*/
+.article {
+  padding-left: 2%;
+  padding-top: 5%;
+}
+
+.article h2 {
+  font-size: 2.5rem;
+}
+
+.article img {
+  width: 60%;
+  height: auto;
+}
+
+.isi h4 {
+  font-weight: bold;
+}
+
+.isi li {
+  color: #5f5c5c;
+  padding-left: 2%;
+}
+
+/*Kolom Artikel Telusuri */
+/* Pembaruan Bagian Artikel */
+.artikel {
+  margin-top: 20px;
+  /* Menambahkan jarak di bagian atas */
+  margin-bottom: 20px;
+  /* Menambahkan jarak di bagian bawah */
+  padding: 0 20px;
+  /* Menambahkan ruang kiri dan kanan */
+}
+
+.judul {
+  position: relative; /* Membuat posisi relatif untuk memungkinkan pengaturan posisi absolut pada anak-anaknya */
+}
+
+.judul ul {
+  list-style-type: none; /* Menghilangkan bullet points */
+  padding: 0; /* Menghapus padding bawaan dari daftar */
+}
+
+.judul h4 {
+  color: #1db265;
+}
+
+.lihat-semua {
+  position: absolute; /* Mengatur posisi absolut untuk tombol */
+  top: 0; /* Meletakkan tombol di bagian atas elemen .judul */
+  right: 0; /* Meletakkan tombol di bagian kanan elemen .judul */
+  padding: 15px 40px; /* Atur ukuran padding */
+  background-color: #0f9b37; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  border: none; /* Hilangkan border */
+  border-radius: 5px; /* Agar tombol memiliki sudut melengkung */
+  cursor: pointer; /* Ubah kursor menjadi pointer saat dihover */
+  transition: background-color 0.3s ease; /* Tambahkan efek transisi */
+  text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+  border-radius: 50px; /* Membuat sudut tautan sedikit melengkung */
+}
+
+.lihat-semua:hover {
+  background-color: #1db265; /* Warna latar belakang saat dihover */
+}
+
+.artikel .artikel-row .artikel-item h5 {
+  color: #0f9b37;
+}
+
+.artikel .artikel-row .artikel-item h3 {
+  font-size: 20pn;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.artikel-row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  /* Memungkinkan item untuk wrap */
+  justify-content: flex-start;
+  /* Memusatkan item */
+  gap: 20px;
+  /* Menambahkan jarak antara kolom */
+  margin-top: -10px;
+  /* Mengurangi jarak atas */
+}
+
+.artikel-column {
+  flex-basis: calc(33.33% - 20px);
+  /* Menyesuaikan lebar kolom */
+  margin-bottom: 20px;
+  /* Menambahkan ruang antara kolom */
+}
+
+.artikel-item {
+  background-color: #fff;
+  /* Warna latar belakang putih */
+  border-radius: 10px;
+  /* Memperbesar radius border untuk sudut yang lebih halus */
+  padding: 20px;
+  /* Ubah padding menjadi 20px */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Meningkatkan bayangan kotak */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Menambahkan transisi */
+  margin: 20px;
+  /* Menambahkan margin sebesar 20px */
+}
+
+.artikel-item:hover {
+  transform: translateY(-5px);
+  /* Menambahkan efek hover ringan */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  /* Meningkatkan bayangan kotak saat hover */
+}
+
+.artikel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /* Menerapkan radius border pada gambar */
+  margin-bottom: 15px;
+  /* Penyesuaian margin */
+}
+
+.artikel-item h3 {
+  font-size: 1.3rem;
+  /* Menyesuaikan ukuran font */
+  margin-bottom: 10px;
+  color: #333;
+  /* Memperdalam warna */
+}
+
+.artikel-item p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  /* Penyesuaian margin */
+  color: #555;
+  /* Memperdalam warna */
+}
+
+.read-more {
+  display: inline-block;
+  /* Mengubah menjadi inline-block untuk penyejajaran yang lebih baik */
+  color: #1db265;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  /* Menyederhanakan transisi */
+}
+
+.read-more:hover {
+  color: #40d186;
+  /* Memperdalam warna saat hover */
+}
+
+/*bagian footer*/
+.contact {
+  display: flex;
+}
+
+.contact .putih {
+  color: #ffffff;
+  flex-direction: column;
+}
+
+.contact .hijau {
+  color: #14b85e;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.putih,
+.hijau {
+  margin-left: 10px; /* Menambahkan jarak antara elemen */
+}
+
+.contact li img {
+  width: 30px; /* Ubah lebar gambar sesuai kebutuhan */
+  height: 30px;
+}

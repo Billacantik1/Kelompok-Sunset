@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding:10px;
+    background-color: #ffffff; /* Tambahkan latar belakang jika diinginkan */
+    z-index: 1000; /* Atur z-index agar navigasi tampil di atas konten lain */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .logo img {
+    width: 150px; /* Atur lebar gambar logo sesuai kebutuhan */
+    height: auto; /* Biarkan tinggi gambar mengikuti proporsi aslinya */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 50px;
+    position: relative;
+    /* Untuk posisi relatif agar dropdown muncul di posisi relatif dari item menu utama */
+  }
+  
+  
+  .nav-links li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .nav-links li a:hover {
+    color: #3e8e41;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 5px;
+    display: block;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    /* Menambahkan transisi jika diinginkan */
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    padding: 15px;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.016);
+    z-index: 1;
+    opacity: 0;
+    /* Atur opacity ke 0 agar awalnya tersembunyi */
+    transition: opacity 0.9s ease;
+    /* Tambahkan efek transisi */
+  }
+  
+  /* Tampilkan dropdown ketika item menu utama di-hover */
+  .nav-links li:hover .dropdown-content {
+    display: block;
+    opacity: 2;
+    /* Atur opacity ke 1 ketika dropdown ditampilkan */
+  }
+  
+  .panduan_gizi {
+    text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+    padding: 10px 30px; /* Ruang dalam di dalam tautan */
+    background-color: #0f9b37; /* Warna latar belakang tautan */
+    color: #fff; /* Warna teks */
+    border-radius: 50px; /* Membuat sudut tautan sedikit melengkung */
+  }
+  
+  .panduan_gizi:hover {
+    background-color: #1db265; /* Warna latar belakang saat tautan dihover */
+  }
+  
+  /* General button styling */
+  .btn1 {
+    display: inline-block;
+    padding: 5px 30px;
+   
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #14B85E;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect */
+  .btn1:hover {
+    background-color: #2a7c33;
+    transform: translateY(-2px);
+  }
+  
+  /* Active effect */
+  .btn1:active {
+    background-color: #d3fdd8;
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Focus effect */
+  .btn1:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(194, 243, 195, 0.5);
+  }
+
+
+
+
+
+
+
+/*pada Bagian Header*/
+.container {
+    background-color: #e0f7ef;
+    padding: 40px;
+    padding-top: 10%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.headline {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.highlight {
+    color: #14B85E;
+}
+
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image {
+    width: 100%;
+    height: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+/*pada Bagian bagian resep makanan*/
+.container_makanan {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 100%;
+}
+
+
+.container_makanan1 {
+    background-color: #ffffff;
+    padding: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 100%;
+}
+
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 40px;
+}
+
+.card-container {
+  display:flex;
+  justify-content: space-evenly; /* Mengubah dari space-around ke space-evenly untuk rata samping */
+  flex-wrap: nowrap; /* Mengubah dari wrap ke nowrap agar card tidak turun ke baris baru */
+  gap: 5px;
+  overflow: visible; /* Pastikan elemen induk memiliki overflow visible */
+  padding-top: 110px;
+}
+
+.card {
+  position: relative; /* Menambahkan posisi relatif pada card */
+  overflow: visible; /* Mengizinkan konten untuk muncul di luar batas */
+  background-color: #e0f7ef;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Membuat bayangan lebih gelap */
+  max-width: 150px; /* Diperpanjang dari 220px menjadi 300px */
+  flex: 0 0 calc(20% - 20px); /* Mengubah dari flex: 1 1 menjadi flex: 0 0 untuk mencegah perubahan ukuran */
+  margin: 30px;
+  padding: 40px;
+  text-align: center;
+  height: 200px; /* Menambahkan tinggi untuk membuat card lebih panjang ke atas */
+  transition: transform 0.3s; /* Menambahkan efek transisi saat kursor diarahkan */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Membuat card membesar saat kursor diarahkan */
+}
+.card-image {
+  position: absolute; /* Mengatur posisi gambar menjadi absolut */
+  top: -55%; /* Mengatur posisi gambar agar muncul keluar dari card ke atas */
+  left: 50%; /* Menengahkan gambar secara horizontal */
+  transform: translateX(-50%); /* Menyesuaikan penengahan gambar */
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: auto;
+  color: #14B85E;
+  justify-content: flex-end; /* Mengubah ke flex-end untuk membuat teks rata ke kanan */
+  margin-bottom: 10px;
+  position: absolute;
+  top: 42%;
+  right: 50%; /* Mengubah left menjadi right */
+  transform: translate(50%, -50%); /* Mengubah nilai translate agar teks rata ke kanan */
+  font-weight: bold; /* Menjadikan teks judul menjadi tebal */
+  white-space: nowrap; /* Mencegah teks judul menurun ke bawah */
+  font-weight: bold; /* Menjadikan teks judul menjadi tebal */
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 52%; /* Mengatur posisi deskripsi di bawah judul */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* Menentukan lebar deskripsi agar tidak melebihi card */
+  text-align: center; /* Menengahkan teks deskripsi */
+}
+
+.card-button {
+  display: block; /* Mengubah dari inline-block menjadi block */
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #4caf50;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 80%; /* Mengatur posisi tombol di bawah deskripsi */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%; /* Menentukan lebar tombol agar sesuai dengan card */
+  text-align: center; /* Menengahkan teks pada tombol */
+  margin: 0 auto; /* Membuat tombol berada di tengah */
+}
+
+.card-button:hover {
+  background-color: #45a049;
+}
+
+.headline_makanan {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    padding-left: 15px;
+}
+
+.highlight_makanan {
+    color: #14B85E;
+    padding-left: 15px;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+/*bagian footer*/
+.contact {
+    display: flex;
+  }
+  
+  .contact .putih {
+    color: #ffffff;
+    flex-direction: column;
+  }
+  
+  .contact .hijau {
+    color: #14b85e;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .putih,
+  .hijau {
+    margin-left: 10px; /* Menambahkan jarak antara elemen */
+  }
+  
+  .contact li img {
+    width: 30px; /* Ubah lebar gambar sesuai kebutuhan */
+    height: 30px;
+  }
+  
+  
+  
+  

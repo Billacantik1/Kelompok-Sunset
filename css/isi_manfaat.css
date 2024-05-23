@@ -1,0 +1,323 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding:10px;
+  background-color: #ffffff; /* Tambahkan latar belakang jika diinginkan */
+  z-index: 1000; /* Atur z-index agar navigasi tampil di atas konten lain */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.logo img {
+  width: 150px; /* Atur lebar gambar logo sesuai kebutuhan */
+  height: auto; /* Biarkan tinggi gambar mengikuti proporsi aslinya */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 50px;
+  position: relative;
+  /* Untuk posisi relatif agar dropdown muncul di posisi relatif dari item menu utama */
+}
+
+
+.nav-links li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #3e8e41;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 5px;
+  display: block;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  /* Menambahkan transisi jika diinginkan */
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  padding: 15px;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.016);
+  z-index: 1;
+  opacity: 0;
+  /* Atur opacity ke 0 agar awalnya tersembunyi */
+  transition: opacity 0.9s ease;
+  /* Tambahkan efek transisi */
+}
+
+/* Tampilkan dropdown ketika item menu utama di-hover */
+.nav-links li:hover .dropdown-content {
+  display: block;
+  opacity: 2;
+  /* Atur opacity ke 1 ketika dropdown ditampilkan */
+}
+
+.panduan_gizi {
+  text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+  padding: 10px 30px; /* Ruang dalam di dalam tautan */
+  background-color: #0f9b37; /* Warna latar belakang tautan */
+  color: #fff; /* Warna teks */
+  border-radius: 50px; /* Membuat sudut tautan sedikit melengkung */
+}
+
+.panduan_gizi:hover {
+  background-color: #1db265; /* Warna latar belakang saat tautan dihover */
+}
+
+/* General button styling */
+.btn1 {
+  display: inline-block;
+  padding: 5px 30px;
+ 
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #14B85E;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.btn1:hover {
+  background-color: #2a7c33;
+  transform: translateY(-2px);
+}
+
+/* Active effect */
+.btn1:active {
+  background-color: #d3fdd8;
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus effect */
+.btn1:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(194, 243, 195, 0.5);
+}
+
+
+
+
+/*pada bagian manfaat sayur wortel dalam gambar ada text*/
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Menyesuaikan ketinggian gambar dengan tinggi layar */
+  overflow: hidden; /* Mengatur agar teks tetap di dalam gambar */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan gambar mengisi seluruh kotak */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.text-overlay h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.text-overlay h1 b {
+  color: #1db265;
+}
+
+/*Kolom Artikel Telusuri */
+/*Bagian flatform layanan informasi*/
+#layanan-kami {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.layanan-item {
+  display: flex;
+  align-items: flex-start; /* Konten di dalam item sejajar dengan item lainnya */
+  width: calc(33.333% - 20px);
+  margin: 10px;
+  background-color: transparent;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: start;
+  border-radius: 5%;
+}
+
+.layanan-item .text {
+  flex-grow: 1;
+  /* Agar teks mengisi sisa ruang yang tersedia */
+}
+
+.layanan-item h2 {
+  font-size: 24px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.layanan-item h2 b {
+  color: #1db265;
+}
+
+.layanan-item p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Pembaruan Bagian resep-terkini */
+/* Pembaruan Bagian Artikel-resep */
+.artikel-resep {
+  margin-top: 20px;
+  /* Menambahkan jarak di bagian atas */
+  margin-bottom: 20px;
+  /* Menambahkan jarak di bagian bawah */
+  padding: 0 20px;
+  /* Menambahkan ruang kiri dan kanan */
+}
+
+.judul-resep {
+  position: relative; /* Membuat posisi relatif untuk memungkinkan pengaturan posisi absolut pada anak-anaknya */
+}
+
+.judul-resep ul {
+  list-style-type: none; /* Menghilangkan bullet points */
+  padding: 0; /* Menghapus padding bawaan dari daftar */
+}
+
+.judul-resep h3 {
+  color: #1db265;
+}
+
+.lihat-semua-resep {
+  position: absolute; /* Mengatur posisi absolut untuk tombol */
+  top: 0; /* Meletakkan tombol di bagian atas elemen .judul */
+  right: 0; /* Meletakkan tombol di bagian kanan elemen .judul */
+  padding: 15px 40px; /* Atur ukuran padding */
+  background-color: #0f9b37; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  border: none; /* Hilangkan border */
+  cursor: pointer; /* Ubah kursor menjadi pointer saat dihover */
+  transition: background-color 0.3s ease; /* Tambahkan efek transisi */
+  text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+  border-radius: 50px; /* Membuat sudut tautan sedikit melengkung */
+}
+
+.lihat-semua-resep:hover {
+  background-color: #1db265; /* Warna latar belakang saat dihover */
+}
+
+.image-grid {
+  padding-left: 2%;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.image-column {
+  position: relative; /* Memastikan kontainer gambar memiliki posisi relatif */
+  width: calc(90% - 10px);
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: block; /* Membuat gambar menjadi blok agar elemen teks dapat ditimpakan di atasnya */
+}
+
+.image-column h5 {
+  position: absolute; /* Menempatkan teks di atas gambar */
+  bottom: 0; /* Menempatkan teks di bagian bawah gambar */
+  left: 0; /* Menempatkan teks di sisi kiri gambar */
+  padding: 10px;
+  margin: 0;
+  color: #fff;
+  text-align: left; /* Alignteks ke sisi kiri */
+  transition: opacity 0.3s ease; /* Tambahkan efek transisi untuk kejelasan teks */
+}
+
+.image-column:hover h5 {
+  opacity: 1; /* Tampilkan teks saat kursor diarahkan ke gambar */
+}
+
+.image-column b {
+  font-size: 18px; /* Sesuaikan ukuran font untuk judul */
+  font-weight: bold; /* Atur tebal huruf */
+  text-transform: uppercase; /* Ubah teks menjadi huruf besar */
+}
+
+.image-column h5 {
+  font-size: 11px; /* Sesuaikan ukuran font untuk paragraf */
+}
+
+/*bagian footer*/
+.contact {
+  display: flex;
+}
+
+.contact .putih {
+  color: #ffffff;
+  flex-direction: column;
+}
+
+.contact .hijau {
+  color: #14b85e;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.putih,
+.hijau {
+  margin-left: 10px; /* Menambahkan jarak antara elemen */
+}
+
+.contact li img {
+  width: 30px; /* Ubah lebar gambar sesuai kebutuhan */
+  height: 30px;
+}
